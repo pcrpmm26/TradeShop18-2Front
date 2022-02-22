@@ -22,11 +22,10 @@ div{
                 <div class="col-md-5 col-md-offset-1">
                     <div class="login_topimg"> </div>
                     <div class="wrap-login100">
-                        <form class="login100-form validate-form" *ngFor="let m of member"> 
-                            <span class="login100-form-title"> บัญชีของฉัน </span> 
-                            <span class="login100-form-subtitle m-b-16">  </span>
-                            <div class="login100-form">
-                                <p>Email : </p>
+                        <form  [formGroup]="memberForm" class="login100-form validate-form"> <span class="login100-form-title "> บัญชีของฉัน </span> <span class="login100-form-subtitle m-b-16">  </span>
+                            <div class="wrap-input100 validate-input m-b-16">
+                                <input class="input100" type="text" name="email" placeholder="Email" formControlName="email">
+                                <span class="focus-input100 symbol-input100 glyphicon glyphicon-user"></span>
                             </div>
                             <div class="wrap-input100 validate-input m-b-16">
                                 <input class="input100" type="password" name="password" placeholder="Password" formControlName="password">
@@ -62,9 +61,8 @@ div{
                             </div>
                             
                             <div class="container-login100-form-btn p-t-25"> 
-                                <p>
-                                    <button class="btn btn-sm btn-info" routerLink="/accountuser/edit">แก้ไข</button>
-                                </p>
+                                    <button type="submit" class="btn btn-success" (click)="updateMember()">บันทึก</button> &nbsp;
+                                    <button type="submit" class="btn btn-danger" routerLink="/accountuser/edit">ยกเลิก</button>
                             </div>
                         </form>
                     </div>

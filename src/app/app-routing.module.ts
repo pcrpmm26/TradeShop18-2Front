@@ -11,7 +11,6 @@ import { EditProductComponent } from './components/pages/edit-product/edit-produ
 import { ExchangeComponent } from './components/pages/exchange/exchange.component';
 import { MainComponent } from './components/pages/main/main.component';
 import { AuthGuard } from './guard/auth.guard';
-import { EditAccountUserComponent } from './components/pages/edit-account-user/edit-account-user.component';
 
 
 const routes: Routes = [
@@ -23,8 +22,7 @@ const routes: Routes = [
     // { path: "product/edit/:id", component: EditProductComponent }
     {path : "login",component:LoginComponent },
     {path : "register",component:RegisterComponent },
-    {path : "accountuser/edit",component:EditAccountUserComponent },
-    {path : "accountuser",component:AccountUserComponent },
+    {path : "accountuser/edit/:id",component:AccountUserComponent },
     {path : "menu",component:MenuComponent },
     {path : "product/edit/:id",component:EditProductComponent },
     {path : "exchange",component:ExchangeComponent },

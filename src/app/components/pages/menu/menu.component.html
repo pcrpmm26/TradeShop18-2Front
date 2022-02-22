@@ -14,6 +14,12 @@ div{
 </style>
 </head>
 <body>
+<div>
+    <!-- <form class="input-group my-3" [formGroup]="searchForm">
+        <input type="text" class="form-control" placeholder="Product Name" formControlName="name" />
+        <button class="input-group-text btn btn-primary" (click)="searchName()">Search</button>
+    </form> -->
+</div>
 <div class="card border-success">
     <div class="card-header bg-success text-white">
     <strong><i class="fa fa-database"></i> Products</strong>
@@ -31,22 +37,21 @@ div{
                 <th>No</th>
                 <th>Name</th>
                 <th>Picture</th>
-                <th>Price</th>
+                <th>Category</th>
                 <th>Detail</th>
                 <th style="width: 20%;">Actions</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>001</td>
-                <td>Speaker JBL Charge 3</td>
-                <td></td>
-                <td>$240</td>
-                <td>12</td>
+            <tr *ngFor="let p of products , let i = index ">
+                <td>{{ i + 1 }}</td>
+                <td>{{ p.name }}</td>
+                <td><img src="{{p.img}}" width="100" ></td> 
+                <td>{{ p.categoryname }}</td>
+                <td>{{ p.details }}</td>
                 <td>
-                    <a href="#" class="btn btn-sm btn-light"><i class="fa fa-th-list"></i></a>
-                    <a href="/editproduct" class="btn btn-sm btn-info"><i class="fa fa-edit"></i></a>
-                    <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                    <a routerLink="/product/edit/{{ p._id }}" class="btn btn-sm btn-info"><i class="fa fa-edit"></i></a>
+                    <a (click)="daleteProduct(p._id)" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                 </td>
             </tr>
         </tbody>

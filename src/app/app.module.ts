@@ -18,7 +18,6 @@ import { AccountUserComponent } from './components/pages/account-user/account-us
 import { MenuComponent } from './components/pages/menu/menu.component';
 import { EditProductComponent } from './components/pages/edit-product/edit-product.component';
 import { ExchangeComponent } from './components/pages/exchange/exchange.component';
-import { EditAccountUserComponent } from './components/pages/edit-account-user/edit-account-user.component';
 
 
 
@@ -33,8 +32,7 @@ import { EditAccountUserComponent } from './components/pages/edit-account-user/e
     NavigationComponent,
     MenuComponent,
     EditProductComponent,
-    ExchangeComponent,
-    EditAccountUserComponent
+    ExchangeComponent
   ],
   imports: [
     BrowserModule,
