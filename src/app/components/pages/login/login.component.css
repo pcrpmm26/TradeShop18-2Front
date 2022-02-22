@@ -236,7 +236,6 @@ input {
 }
 
 .lnr {
-    speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -401,4 +400,9 @@ input {
     .login_topimg .logo_wrap {
         padding: 5px 55px
     }
+}
+
+div{
+	color: gray;
+	font-family: 'Athiti', sans-serif;
 }

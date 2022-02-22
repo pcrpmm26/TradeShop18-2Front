@@ -27,8 +27,13 @@
         padding: 8px 16px;
     } */
 
-    h3{
-        font-size: 20px;
-        font-weight: 600;
-        color: #38424c;
-    }
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #38424c;
+}
+
+div{
+	color: black;
+	font-family: 'Athiti', sans-serif;
+}

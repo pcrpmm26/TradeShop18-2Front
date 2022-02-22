@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ProductComponent } from './components/pages/product/product.component';
 
+import { MainComponent } from './components/pages/main/main.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { AccountUserComponent } from './components/pages/account-user/account-user.component';
@@ -32,7 +33,8 @@ import { ExchangeComponent } from './components/pages/exchange/exchange.componen
     NavigationComponent,
     MenuComponent,
     EditProductComponent,
-    ExchangeComponent
+    ExchangeComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

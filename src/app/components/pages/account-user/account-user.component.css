@@ -401,3 +401,8 @@ input {
         padding: 5px 55px
     }
 }
+
+div{
+	color: gray;
+	font-family: 'Athiti', sans-serif;
+}

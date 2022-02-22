@@ -16,3 +16,11 @@
     .dark-teal-text {
     color: #004d40;
     }
+
+    div{
+        color: black;
+        font-family: 'Athiti', sans-serif;
+    }
+    a{
+      color: black;
+    }
